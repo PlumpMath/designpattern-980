@@ -149,5 +149,3 @@ namespace DoFactory.GangOfFour.Chain.RealWorld
     }
   }
 }
-
- 

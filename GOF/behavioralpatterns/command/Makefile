@@ -14,7 +14,7 @@ a.out: a.o
 %.o: %.cpp
 	$(CXX)  -c $(CXXFLAGS) -o $@ $< -MMD
 %.o: %.c
-	$(CC)  -c $(CFLAGS) -o $@ $< 
+	$(CC)  -c $(CFLAGS) -o $@ $<
 
 TAGS:
 	-@gtags
