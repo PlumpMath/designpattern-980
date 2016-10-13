@@ -6,8 +6,8 @@ JAVA = javac
 
 all: TAGS a.out
 
-a.class: a.java
-	$(JAVAC) $^
+a_cpp.exe: a.cpp
+	$(CXX) $^ $(LDFLAGS) -o $@
 a.exe: a.cs
 	$(MCS) $^
 a.out: a.o

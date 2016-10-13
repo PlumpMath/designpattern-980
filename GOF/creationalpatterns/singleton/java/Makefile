@@ -5,8 +5,8 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-	Main.java \
-	Singleton.java \
+	MainApp.java \
+	LoadBalancer.java \
 
 default: classes
 
