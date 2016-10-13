@@ -37,7 +37,7 @@ Implementation with several programming languages
     
 ---  
 
-- (Game Programming Pattern)[http://gameprogrammingpatterns.com/contents.html]
+- [Game Programming Pattern](http://gameprogrammingpatterns.com/contents.html)
   - Sequencing Pattern
     - Double Buffer
     - Game Loop
