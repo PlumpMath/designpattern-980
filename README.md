@@ -1,7 +1,22 @@
-# GOF patterns Q&A
+# Design Pattern
 
-- Abstract Factory VS Factory ???
-- Builder VS Factory ???
-- Bridge, Decouple an abstraction from its implementation so that the two can vary independently ???
-- Decorator, How to use it ???
-- Proxy VS Adapter ???
+Implementation with several programming languages
+
+---
+
+- [GOF Pattern][http://www.dofactory.com/net/design-patterns]
+  - Creational Pattern
+    - SingleTon
+  - Behaviorial Pattern
+  - Structural Pattern
+  
+---  
+
+- [Game Programming Pattern][http://gameprogrammingpatterns.com/contents.html]
+  - Sequencing Pattern
+    - Double Buffer
+    - Game Loop
+    - Update Method
+  - Behavioral Pattern
+  - Decoupling Pattern
+  - Optimization Pattern
