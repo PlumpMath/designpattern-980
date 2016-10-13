@@ -4,7 +4,7 @@ Implementation with several programming languages
 
 ---
 
-- (GOF Pattern)[http://www.dofactory.com/net/design-patterns]
+- [GOF Pattern](http://www.dofactory.com/net/design-patterns)
   
   - Creational Pattern
     - Abstract Factory	(Creates an instance of several families of classes)
