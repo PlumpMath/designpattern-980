@@ -4,6 +4,25 @@ Implementation with several programming languages
 
 ---
 
+- [101 Design Patterns & Tips for Developers](https://sourcemaking.com/design-patterns-and-tips)
+
+  - Createional Patterns
+  - Structual Patterns
+  - Behavioral Patterns
+  - Composing Methods of Refactoring
+    - Extract Method
+  - Moving Features Between Objects
+  - Organizing Data
+  - Simplifying Conditional Expressions
+  - Making Method Calls Simpler
+  - Dealing with Generalization
+  - Big Refactorings
+    - Convert Procedural Design to Objects
+    - Extract Hierarchy
+    - Tease Apart Inheritance
+
+---
+
 - [GOF Pattern](http://www.dofactory.com/net/design-patterns)
   
   - Creational Pattern
