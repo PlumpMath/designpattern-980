@@ -73,7 +73,7 @@ Implementation with several programming languages
     - **Split Temporary Variable** (If you have a temporary variable assigned to more than once, but is not a loop variable nor a collecting temporary variable, make a separate temporary variable for each assignment)
     - **Substitute Algorithm** (If you want to replace an algorithm with one that is clearer, replace the body of the method with the new algorithm)
 
-- Moving Features Between Objects
+  - Moving Features Between Objects
     - **Extract Class** (If you have one class doing work that should be done by two, create a new class and move the relevant fields and methods from the old class into the new class) 
     - **Hide Delegate** (If a client is calling a delegate class of an object, create methods on the server to hide the delegate)
     - **Inline Class** (If a class isn't doing very much, move all its features into another class and delete it)
