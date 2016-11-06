@@ -63,18 +63,57 @@ Implementation with several programming languages
   - Composing Methods of Refactoring
 
 
+    - **Extract Method** (If you have a code fragment that can be grouped together, turn the fragment into a method whose name explains the purpose of the method) 
+    - **Inline Method** (If a method's body is just as clear as its name, put the method's body into the body of its callers and remove the method)
+    - **Inline Temp** (If you have a temp that is assigned to once with a simple expression, and the temp is getting in the way of other refactorings, replace all references to that temp with the expression)
+    - **Introduce Explaining Variable** (If you have a complicated expression, put the result of the expression, or parts of the expression, in a temporary variable with a name that explains the purpose)
+    - **Remove Assignments to Parameters** (If the code assigns to a parameter, use a temporary variable instead)
+    - **Replace Method with Method Object** (If uou have a long method that uses local variables in such a way that you cannot apply Extract Method, turn the method into its own object so that all the local variables become fields on that object)
+    - **Replace Temp with Query** (If you are using a temporary variable to hold the result of an expression, extract the expression into a method. Replace all references to the temp with the expression. The new method can then be used in other methods)
+    - **Split Temporary Variable** (If you have a temporary variable assigned to more than once, but is not a loop variable nor a collecting temporary variable, make a separate temporary variable for each assignment)
+    - **Substitute Algorithm** (If you want to replace an algorithm with one that is clearer, replace the body of the method with the new algorithm)
 
-  - Moving Features Between Objects
-
-
+- Moving Features Between Objects
+    - **Extract Class** (If you have one class doing work that should be done by two, create a new class and move the relevant fields and methods from the old class into the new class) 
+    - **Hide Delegate** (If a client is calling a delegate class of an object, create methods on the server to hide the delegate)
+    - **Inline Class** (If a class isn't doing very much, move all its features into another class and delete it)
+    - **Introduce Foreign Method** (If a server class you are using needs an additional method, but you can't modify the class, create a method in the client class with an instance of the server class as its first argument)
+    - **Introduce Local Extension** (If a server class you are using needs several additional methods, but you can't modify the class, create a new class that contains these extra methods. Make this extension class a subclass or a wrapper of the original) 
+    - **Move Field** (If a field is, or will be, used by another class more than the class on which it is defined, create a new field in the target class, and change all its users) 
+    - **Move Method** (If a method is, or will be, using or used by more features of another class than the class on which it is defined, create a new method with a similar body in the class it uses most. Either turn the old method into a simple delegation, or remove it altogether) 
+    - **Remove Middle Man** (If a class is doing too much simple delegation, get the client to call the delegate directly)
 
   - Organizing Data
 
-
+    - **Change Bidirectional Association to Unidirectional** (If you have a two-way association but one class no longer needs features from the other, drop the unneeded end of the association)
+    - **Change Reference to Value** (If you have a reference object that is small, immutable, and awkward to manage, turn it into a value object)
+    - **Change Unidirectional Association to Bidirectional** (If you have two classes that need to use each other's features, but there is only a one-way link, add back pointers, and change modifiers to update both sets)
+    - **Change Value to Reference** (If you have a class with many equal instances that you want to replace with a single object, turn the object into a reference object)
+    - **Duplicate Observed Data** (If you have domain data available only in a GUI control, and domain methods need access, copy the data to a domain object. Set up an observer to synchronize the two pieces of data) 
+    - **Encapsulate Collection** (If a method returns a collection, make it return a read-only view and provide add/remove methods) 
+    - **Encapsulate Field** (If there is a public field, make it private and provide accessors) 
+    - **Replace Array with Object** (If you have an array in which certain elements mean different things, replace the array with an object that has a field for each element)
+    - **Replace Data Value with Object** (If you have a data item that needs additional data or behavior, turn the data item into an object)
+    - **Replace Magic Number with Symbolic Constant** (If you have a literal number with a particular meaning, create a constant, name it after the meaning, and replace the number with it)
+    - **Replace Record with Data Class** (If you need to interface with a record structure in a traditional programming environment, make a dumb data object for the record) 
+    - **Replace Subclass with Fields** (If you have subclasses that vary only in methods that return constant data, change the methods to superclass fields and eliminate the subclasses)
+    - **Replace Type Code with Class** (If a class has a numeric type code that does not affect its behavior, replace the number with a new class) 
+    - **Replace Type Code with State/Strategy** (If you have a type code that affects the behavior of a class, but you cannot use subclassing, replace the type code with a state object) 
+    - **Replace Type Code with Subclasses** (If you have an immutable type code that affects the behavior of a class, replace the type code with subclasses) 
+    - **Introduce Explaining Variable** (If you have a complicated expression, put the result of the expression, or parts of the expression, in a temporary variable with a name that explains the purpose) 
+    - **Remove Assignments to Parameters** (If the code assigns to a parameter, use a temporary variable instead)
+    - **Self Encapsulate Field** (If you are accessing a field directly, but the coupling to the field is becoming awkward, create getting and setting methods for the field and use only those to access the field)
 
   - Simplifying Conditional Expressions
 
-
+    - **Consolidate Conditional Expression** (If you have a sequence of conditional tests with the same result, combine them into a single conditional expression and extract it) 
+    - **Consolidate Duplicate Conditional Fragments** (If the same fragment of code is in all branches of a conditional expression, move it outside of the expression) 
+    - **Decompose Conditional** (If you have a complicated conditional (if-then-else) statement, extract methods from the condition, then part, and else parts)
+    - **Introduce Assertion** (If a section of code assumes something about the state of the program, make the assumption explicit with an assertion) 
+    - **Introduce Null Object** (If you have repeated checks for a null value, replace the null value with a null object) 
+    - **Remove Control Flag** (If you have a variable that is acting as a control flag for a series of boolean expressions, use a break or return instead) 
+    - **Replace Conditional with Polymorphism** (If you have a conditional that chooses different behavior depending on the type of an object, move each leg of the conditional to an overriding method in a subclass. Make the original method abstract)
+    - **Replace Nested Conditional with Guard Clauses** (If a method has conditional behavior that does not make clear the normal path of execution, use guard clauses for all the special cases)
 
   - Making Method Calls Simpler
 
