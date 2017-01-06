@@ -149,3 +149,19 @@ Implementation with several programming languages
     - **Push Down Method**          (If behavior on a superclass is relevant only for some of its subclasses, move it to those subclasses)
     - **Replace Delegation with Inheritance** (If you're using delegation and are often writing many simple delegations for the entire interface, make the delegating class a subclass of the delegate)
     - **Replace Inheritance with Delegation** (If a subclass uses only part of a superclasses interface or does not want to inherit data, create a field for the superclass, adjust methods to delegate to the superclass, and remove the subclassing)
+    
+# Reference
+
+## Video
+
+- [UML 2.0 Tutorial](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
+
+## Book
+
+- Design Patterns: Elements of Reusable Object-Oriente?d Software
+- Head First Design Patterns
+
+## Web
+
+- [.net design patterns](http://dofactory.com/net/design-patterns)
+- [101 Design Patterns & Tips for Developers](https://sourcemaking.com/design-patterns-and-tips)
