@@ -155,6 +155,7 @@ Implementation with several programming languages
 ## Video
 
 - [UML 2.0 Tutorial](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
+- [Design Patterns Video Tutorial](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
 
 ## Book
 
