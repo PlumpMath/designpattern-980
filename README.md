@@ -1,4 +1,4 @@
-# Programming Design Pattern
+# Design Pattern
 
 Implementation with several programming languages
 
@@ -150,20 +150,6 @@ Implementation with several programming languages
     - **Replace Delegation with Inheritance** (If you're using delegation and are often writing many simple delegations for the entire interface, make the delegating class a subclass of the delegate)
     - **Replace Inheritance with Delegation** (If a subclass uses only part of a superclasses interface or does not want to inherit data, create a field for the superclass, adjust methods to delegate to the superclass, and remove the subclassing)
 
-# Cloud Design Pattern
-
-- [aws cloud design pattern](http://en.clouddesignpattern.org/index.php/Main_Page)
-
-  - Basic Patterns
-
-    - Snapshot Pattern (Data Backups)
-    - Stamp Pattern (Server Replication)
-    - Scale Up Pattern (Dynamic Server Spec Up/Down)
-    - Scale Out Pattern (Dynamically Increasing the Number of Servers)
-    - On-demand Disk Pattern (Dynamically Increasing/Decreasing Disk Capacity)
-
-
-
 # Reference
 
 ## Video
@@ -180,6 +166,3 @@ Implementation with several programming languages
 
 - [.net design patterns](http://dofactory.com/net/design-patterns)
 - [101 Design Patterns & Tips for Developers](https://sourcemaking.com/design-patterns-and-tips)
-- [aws cloud design pattern](http://en.clouddesignpattern.org/index.php/Main_Page)
-- [azure cloud design patterns](https://msdn.microsoft.com/en-us/library/dn568099.aspx)
-- [Tutorials, architecture guides and additional resources to help you build on Cloud Platform](https://cloud.google.com/solutions/)
